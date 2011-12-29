@@ -323,7 +323,9 @@ void drawScene1(int lineIdx)
 void main_rtr0ket (void) 
 {
 	int i,x,y;
-	
+	for (y = 0; y < 8; y++)
+		for (x = 0; x < XSIZE; x++)
+			lcdSetPixel(x,y,0);
 	DoString(0,0,nickname);
 
 	for (i=0; i<8*XSIZE/8; i++) nicknameBuf[i] = 0; 
