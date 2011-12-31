@@ -369,6 +369,6 @@ void main_rtr0ket (void)
 
 		lcdDisplay();
 		timer += 1000/24;
-		delayms(10);
+		delayms_queue_plus(10,0);
 	}
 }
